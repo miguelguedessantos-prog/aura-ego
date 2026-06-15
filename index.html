@@ -1,1 +1,45 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Kart Race</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mario Kart Mini Race</h1>
+        <button id="race-btn">CORRER!</button>
+        <button id="reset-btn">Reiniciar</button>
+    </header>
+
+    <main class="track-container">
+        <div class="lane" id="mario-lane">
+            <div class="character" id="mario">
+                <span class="kart-emoji">🔴🏎️</span>
+                <span class="name">Mario</span>
+            </div>
+            <div class="finish-line"></div>
+        </div>
+
+        <div class="lane" id="luigi-lane">
+            <div class="character" id="luigi">
+                <span class="kart-emoji">🟢🏎️</span>
+                <span class="name">Luigi</span>
+            </div>
+            <div class="finish-line"></div>
+        </div>
+    </main>
+
+    <div id="result-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="winner-text"></h2>
+            <button id="close-btn">Jogar Novamente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
